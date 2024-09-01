@@ -1,15 +1,16 @@
 import { ReactNode } from "react";
-import { IoMdStar } from "react-icons/io";
+import { IoMdStar, IoMdSearch } from "react-icons/io";
 
-export type IconName = "star";
+export type IconNames = "star" | "search";
 
 export type IconProps = {
-  name: IconName;
+  name: IconNames;
   size?: number;
 };
 
-const iconMapper: { [key in IconName]: ReactNode } = {
+const iconMapper: { [key in IconNames]: ReactNode } = {
   star: <IoMdStar />,
+  search: <IoMdSearch />,
 };
 
 export function Icon(props: IconProps) {

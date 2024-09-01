@@ -32,15 +32,18 @@ export function Card(props: CardProps) {
             <strong className="text-sm">4,96</strong>
           </div>
         </div>
-        <p className="text-neutral-400 line-clamp-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia
-          ipsa ullam fugit! Optio hic sit et veniam quidem ea voluptatum, totam
-          quasi saepe vel provident, velit repellat recusandae culpa.
-        </p>
-        <span>Arquitetura | Evento</span>
-        <p>
-          Pacotes de <strong>R$ 420 até R$ 1.520</strong>
-        </p>
+        <div className="flex flex-col gap-2">
+          <p className="text-neutral-400 line-clamp-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+            officia ipsa ullam fugit! Optio hic sit et veniam quidem ea
+            voluptatum, totam quasi saepe vel provident, velit repellat
+            recusandae culpa.
+          </p>
+          <span>Arquitetura | Evento</span>
+          <p>
+            Pacotes de <strong>R$ 420 até R$ 1.520</strong>
+          </p>
+        </div>
       </div>
     </a>
   );
