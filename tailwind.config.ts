@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        surface: "var(--surface)",
+        "on-surface-primary": "var(--on-surface-primary)",
+        "on-surface-secondary": "var(--on-surface-secondary)",
+        "on-surface-disabled": "var(--on-surface-disabled)",
+      },
     },
   },
   plugins: [],

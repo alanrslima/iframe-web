@@ -13,7 +13,7 @@ export function Card(props: CardProps) {
   return (
     <a
       href="#"
-      className="rounded-lg transition-shadow hover:shadow-2xl border-black border-2 hover:border-neutral-700 hover:shadow-neutral-600 bg-neutral-800 overflow-hidden"
+      className="rounded-lg border-2 border-surface hover:border-on-surface-disabled transition-all hover:shadow-2xl hover:shadow-neutral-600 bg-surface overflow-hidden"
     >
       <img
         className="w-full h-44 object-cover"
@@ -33,7 +33,7 @@ export function Card(props: CardProps) {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-neutral-400 line-clamp-2">
+          <p className="text-red line-clamp-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
             officia ipsa ullam fugit! Optio hic sit et veniam quidem ea
             voluptatum, totam quasi saepe vel provident, velit repellat
@@ -51,15 +51,15 @@ export function Card(props: CardProps) {
 
 function CardLoading() {
   return (
-    <div className="rounded-lg transition-shadow  border-black border-2 bg-neutral-800 overflow-hidden">
+    <div className="rounded-lg transition-shadow bg-surface overflow-hidden">
       <div className="animate-pulse">
-        <div className="w-full h-44  bg-neutral-700 object-cover" />
+        <div className="w-full h-44  bg-on-surface-disabled object-cover" />
         <div className="text-sm p-4 pt-16 relative">
-          <div className="bg-neutral-700 rounded-md h-5 w-1/2" />
-          <div className="bg-neutral-700 rounded-md h-3 mt-3 w-full" />
-          <div className="bg-neutral-700 rounded-md  h-3 mt-2 w-full" />
-          <div className="bg-neutral-700 rounded-md  h-3 mt-2 w-1/2" />
-          <div className="bg-neutral-700 rounded-md  h-3 mt-2 w-2/3" />
+          <div className="bg-on-surface-disabled rounded-md h-5 w-1/2" />
+          <div className="bg-on-surface-disabled rounded-md h-3 mt-3 w-full" />
+          <div className="bg-on-surface-disabled rounded-md  h-3 mt-2 w-full" />
+          <div className="bg-on-surface-disabled rounded-md  h-3 mt-2 w-1/2" />
+          <div className="bg-on-surface-disabled rounded-md  h-3 mt-2 w-2/3" />
         </div>
       </div>
     </div>
