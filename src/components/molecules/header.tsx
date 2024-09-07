@@ -2,7 +2,7 @@ import { Avatar, Button } from "../atoms";
 
 export function Header() {
   return (
-    <header className="h-24 px-24 justify-between w-full flex items-center bg-neutral-800">
+    <header className="h-24 z-50 shadow-2xl shadow-neutral-900 sticky top-0 px-24 justify-between w-full flex items-center bg-surface">
       <div />
       <div>
         <Button leftIcon="search" rounded text="Buscar" />

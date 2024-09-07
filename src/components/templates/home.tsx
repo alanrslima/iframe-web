@@ -31,7 +31,7 @@ export function HomeTemplate() {
   return (
     <main className="flex flex-col">
       <Header />
-      <div className="flex  flex-col py-6 px-6 md:px-24 gap-6">
+      <div className="flex flex-col py-6 px-6 md:px-24 gap-6">
         <Tab value={tabs[0].id} tabs={tabs} />
         <CardsGrid cards={cards} />
       </div>

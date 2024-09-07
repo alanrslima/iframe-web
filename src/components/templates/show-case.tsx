@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
-import { Header, ImageCard, Outdoor, Post } from "../molecules";
+import { Header, ImageCard, Item, Outdoor, Post } from "../molecules";
 import { Avatar, Button } from "../atoms";
+import { SelectGroupButtons, StatsRow } from "../organisms";
 
 function createRandomImages() {
   return faker.image.url();
@@ -32,10 +33,14 @@ export function ShowCaseTemplate() {
                 </p>
               </div>
             </div>
-            <div className="flex p-6 bg-surface gap-4 rounded-md">
+            <div className="flex flex-col p-6 bg-surface gap-4 rounded-md">
               <h2 className="text-2xl text-on-surface-primary font-semibold">
                 Especialidades
               </h2>
+              <Item />
+              <Item />
+              <Item />
+              <Item />
             </div>
             <div className="flex flex-col p-6 bg-surface gap-4 rounded-md">
               <h2 className="text-2xl text-on-surface-primary font-semibold">
@@ -45,12 +50,19 @@ export function ShowCaseTemplate() {
                 <ImageCard />
                 <ImageCard />
                 <ImageCard />
-                <ImageCard />
               </div>
             </div>
           </section>
 
-          <section className="col-span-1 p-6 self-start rounded-md bg-surface">
+          <section className="col-span-1 gap-6 flex flex-col p-6 self-start rounded-md bg-surface">
+            <SelectGroupButtons
+              defaultValue="1"
+              options={[
+                { id: "1", title: "Pacote Básico" },
+                { id: "2", title: "Pacote Médio" },
+                { id: "3", title: "Pacote Premium" },
+              ]}
+            />
             <Button full text="Agendar" />
           </section>
         </div>
@@ -58,6 +70,7 @@ export function ShowCaseTemplate() {
           <h2 className="text-2xl text-on-surface-primary font-semibold">
             Avaliações dos clientes
           </h2>
+          <StatsRow />
           <div className="grid grid-cols-2 gap-6">
             <Post />
             <Post />
